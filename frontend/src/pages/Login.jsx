@@ -71,7 +71,7 @@ import { Box, Stack, Typography, TextField,InputAdornment,FormControl,OutlinedIn
                     setMsg(res.data.msg);
                     setOpens(true);
                     localStorage.setItem("chat-app-user",JSON.stringify(res.data.user));
-                    navigate('/')
+                    navigate('/chat')
                 }
             })
            }
@@ -79,7 +79,7 @@ import { Box, Stack, Typography, TextField,InputAdornment,FormControl,OutlinedIn
     
         useEffect(()=>{
            if(localStorage.getItem("chat-app-user")){
-            navigate('/')
+            navigate('/chat')
            }
         },[])
     

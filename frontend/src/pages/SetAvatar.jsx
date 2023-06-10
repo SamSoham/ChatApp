@@ -32,7 +32,7 @@ async function setProfilePicture(){
       user.isAvatarImageSet = true;
       user.avatarImage = data.image
       localStorage.setItem('chat-app-user',JSON.stringify(user))
-      navigate('/')
+      navigate('/chat')
     }
     else{
       setMsg("Error in setting Avatar..Please try again")
@@ -61,7 +61,7 @@ async function setProfilePicture(){
      
       useEffect(()=>{
         if(!localStorage.getItem("chat-app-user")){
-         navigate('/login')
+         navigate('/')
         }
      },[])
     return(

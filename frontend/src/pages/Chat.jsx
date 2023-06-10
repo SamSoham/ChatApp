@@ -18,7 +18,7 @@ export default function Chat(){
     const info = JSON.parse(localStorage.getItem('chat-app-user'))
 function logout(){
     localStorage.removeItem('chat-app-user')
-    navigate('/login')
+    navigate('/')
 }
  function Welcome(){
      setTimeout(()=>{
@@ -71,7 +71,7 @@ async function getMsg(){
 }
 useEffect(()=>{
     if(!localStorage.getItem("chat-app-user")){
-     navigate('/login')
+     navigate('/')
     }
  },[])
 
