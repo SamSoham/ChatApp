@@ -13,6 +13,7 @@ export default function SetAvatar(){
   const [isLoading, setIsLoading] = useState(true);
   const [selectedAvatar, setSelectedAvatar] = useState(undefined);
   const [msg,setMsg] = useState("")
+ 
     const [open,setOpen] = useState(false)
     function handleClose3(event, reason){
         setOpen(false);
